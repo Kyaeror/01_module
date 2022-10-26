@@ -58,15 +58,20 @@ p {
     background-size: cover;
     background-position: center;
 }
-
-.float-left {
+/* seperated both .float-left classes in preparation for adding audio and renamed each class to suite the requirements */
+.search {
     float: left;
     margin-right: 25px;
 }
 
-.float-right {
+.online {
     float: right;
     margin-left: 25px;
+}
+
+.social {
+    float: left;
+    margin-right: 25px;
 }
 
 .content {
@@ -91,7 +96,7 @@ p {
     color: #ffffff;
 }
 
-.benefit-lead , .benefit-brand , .benefit-cost h3 {
+.benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
 }
