@@ -8,86 +8,75 @@
 </head>
 
 <body>
-    <div class="header">
+    <!-- changed class into a header -->
+    <header>
         <h1>Hori<span class="seo">seo</span>n</h1>
-        <div>
+        <nav>
             <ul>
-                <li>
-                    <a href="#search-engine-optimization">Search Engine Optimization</a>
-                </li>
-                <li>
-                    <a href="#online-reputation-management">Online Reputation Management</a>
-                </li>
-                <li>
-                    <a href="#social-media-marketing">Social Media Marketing</a>
-                </li>
+                <!-- changed li for a cleaner feel -->
+                <li><a href="#search-engine-optimization">Search Engine Optimization</a></li>
+                <li><a href="#online-reputation-management">Online Reputation Management</a></li>
+                <li><a href="#social-media-marketing">Social Media Marketing</a></li>
             </ul>
-        </div>
-    </div>
-    <div class="hero"></div>
-    <div class="content">
+        </nav>
+    </header>
+    <!-- changed the div to a img -->
+    <img src= "./assets/images/digital-marketing-meeting.jpg" alt = "Horiseon front image" class="hero"></img>
+    <!-- changed this into a section -->
+    <section class="content">
         <!-- added id so that search-engine-optimization hyperlink works properly -->
         <div id="search-engine-optimization" class="search-engine-optimization">
             <!-- renamed all img classes to link to the corresponding .css class and in preparation for JS script referencing -->
-            <!-- added audio for all img files -->
-            <img src="./assets/images/search-engine-optimization.jpg" class="search" />
+            <!-- added audio for all img files array positioning is based on what comes first i.e. search would be array[0] and cost would be array[5]-->
+            <!-- set alternative names for the images so that the screen reader can capture them -->
+            <img src="./assets/images/search-engine-optimization.jpg" alt = "search engine optimization image" class="search" />
             <audio src="./assets/audio/audio-00-Search Engine Optimization.mp3"></audio>
             <h2>Search Engine Optimization</h2>
-            <p>
-                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
-            </p>
+                <p>The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.</p>
         </div>
         <div id="online-reputation-management" class="online-reputation-management">
-            <img src="./assets/images/online-reputation-management.jpg" class="online" />
+            <img src="./assets/images/online-reputation-management.jpg" alt="online reputation management image" class="online" />
             <audio src="./assets/audio/audio-01-Online Reputation Management.mp3"></audio>
             <h2>Online Reputation Management</h2>
-            <p>
-                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
-            </p>
+                <p>The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.</p>
         </div>
         <div id="social-media-marketing" class="social-media-marketing">
-            <img src="./assets/images/social-media-marketing.jpg" class="social" />
+            <img src="./assets/images/social-media-marketing.jpg" alt ="social media marketing image" class="social" />
             <audio src="./assets/audio/audio-02-Social Media Marketing.mp3"></audio>
             <h2>Social Media Marketing</h2>
-            <p>
-                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
-            </p>
+                <p>Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.</p>
         </div>
-    </div>
-    <div class="benefits">
+    </section>
+    <!-- changed this to a section -->
+    <section class="benefits">
         <div class="benefit-lead">
             <h3>Lead Generation</h3>
             <!-- renamed all img classes in preparation for JS script referencing -->
             <!-- added audio for all img files -->
-            <img src="./assets/images/lead-generation.png" class = "lead" />
+            <img src="./assets/images/lead-generation.png" alt = "lead generation image" class = "lead" />
             <audio src="./assets/audio/audio-03-Lead Generation.mp3"></audio>
-            <p>
-                Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
-            </p>
+                <p>Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.</p>
         </div>
         <div class="benefit-brand">
             <h3>Brand Awareness</h3>
-            <img src="./assets/images/brand-awareness.png" class = "brand"/>
+            <img src="./assets/images/brand-awareness.png" alt = "Brand Awareness image" class = "brand"/>
             <audio src="./assets/audio/audio-04-Brand Awareness.mp3"></audio>
-            <p>
-                Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
-            </p>
+                <p>Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.</p>
         </div>
         <div class="benefit-cost">
             <h3>Cost Management</h3>
-            <img src="./assets/images/cost-management.png" class = "cost">
+            <img src="./assets/images/cost-management.png" alt = "Cost Management image" class = "cost">
             <audio src="./assets/audio/audio-05-Cost Management.mp3"></audio>
-            <p>
-                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
-            </p>
+                <p>As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.</p>
         </div>
-    </div>
-    <div class="footer">
-        <h2>Made with ❤️️ by Horiseon</h2>
+    </section>
+    <!-- changed heading element to be in order -->
+    <footer>
+        <h4>Made with ❤️️ by Horiseon</h4>
         <p>
             &copy; 2019 Horiseon Social Solution Services, Inc.
         </p>
-    </div>
+    </footer>
     <script src="./assets/js/main.js"></script>
 </body>
 
