@@ -1,4 +1,5 @@
 // added script to play audio for each img by referencing the class and playing the corresponding mp3 array
+// added variables that references the classes in the html file
 let search = document.querySelector('.search');
 let online = document.querySelector('.online');
 let social = document.querySelector('.social');
@@ -6,10 +7,12 @@ let lead = document.querySelector('.lead');
 let brand = document.querySelector('.brand');
 let cost = document.querySelector('.cost');
 let audioArr = document.getElementsByTagName('audio');
+// added controls to mouse over the image and plays an audio based on a array organized by whatever it comes into contact first in the html file
 console.log(audioArr);
 search.addEventListener('mouseenter', () => {
     audioArr[0].play()
 });
+// added script where it will add an event when the mouse leaves the image it will first pause then return to the beginning of the audio
 search.addEventListener('mouseleave', () => {
     audioArr[0].pause()
     audioArr[0].currentTime = 0
